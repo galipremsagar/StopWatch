@@ -10,9 +10,11 @@ the history table that records the start time, and the current latitude and long
 the application will record the time, latitude, and longitude, as well as the amount of time that has elapsed.
 
 Stretch Goal 1
+
 Add a reset button that clears the time entry history table.
 
 Stretch Goal 2
+
 Your journey may be a long one, and you may pass more than one timezone. Record the timezone when you start and stop
 the watch, and correctly display the elapsed time.
 
@@ -22,7 +24,9 @@ at your record-setting speed. You can use HTML5 geolocation and localStorage to 
 
 RREADME & INSTRUCTIONS:
 
+
 I have implemented all the features asked for including the stretch goals too.
+
 
 One of the assumption which I made is that I don't have to store the stop watch
 history in a back-end DB, instead I would use browser local storage.
