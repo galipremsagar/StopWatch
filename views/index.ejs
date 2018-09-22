@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel="script" href='/javascripts/stopWatchRuntime.js'/>
+</head>
+<body onload="loadData()">
+<script src="/javascripts/moment.min.js"></script>
+<script src="/javascripts/stopWatchRuntime.js"></script>
+<div class="content">
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <table id="historyTable">
+        <thead>
+        <tr>
+            <th>Start/Stop Time</th>
+            <th>Latitude & Longitude</th>
+            <th>Time Elapsed</th>
+        </tr>
+        </thead>
+        <tbody id="historyTableBody">
+
+        </tbody>
+    </table>
+    <br/>
+    <label>GPS Status :</label> <label id="gpsStatus">Ready</label>
+    <br/>
+    <br/>
+    <div style="width:800px; margin:0 auto;">
+        <button onclick="start()" id="startBtn">Start</button>
+        <button onclick="stop()" id="stopBtn">Stop</button>
+        <button onclick="clearAll()" id="stopBtn">Clear All</button>
+    </div>
+</div>
+</body>
+</html>
